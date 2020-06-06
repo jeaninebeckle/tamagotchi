@@ -26,7 +26,8 @@ const clickRunButtonEvent = (e) => {
 
 const clickViolenceButtonEvent = (e) => {
   e.preventDefault();
-  strength = Math.min(strength - 10, 0);
+  strength -= 10;
+  if (strength < 0) strength = 0;
   buildFightQuadrant();
 };
 
