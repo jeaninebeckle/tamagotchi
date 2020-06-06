@@ -7,10 +7,10 @@ let energy = 50;
 const buildSleepQuadrant = () => {
   let domString = '<div class="sleepyTime">';
 
-  domString += `<h3>Sleep</h3>
-    <h4>Current energy level: ${energy}</h4>
-    <button id="napButton">Nap</button>
-    <button id="sleepButton">Sleep</button>
+  domString += `<h3>SLEEP</h3>
+    <h4>Tommy's current energy level: ${energy}</h4>
+    <button id="napButton"><i class="fas fa-battery-half"></i></button>
+    <button id="sleepButton"><i class="fas fa-battery-full"></i></button>
     `;
 
   domString += '</div>';

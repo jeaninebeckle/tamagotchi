@@ -7,10 +7,10 @@ let fun = 50;
 const buildPlayQuadrant = () => {
   let domString = '<div class="playTime">';
 
-  domString += `<h3>Play</h3>
-    <h4>Current strength level: ${fun}</h4>
-    <button id="superButton">Super Fun Time</button>
-    <button id="kindaButton">Kinda Fun Time</button>
+  domString += `<h3>PLAY/h3>
+    <h4>Tommy's current fun level: ${fun}</h4>
+    <button id="superButton"><i class="far fa-laugh-beam"></i></button>
+    <button id="kindaButton"><i class="far fa-smile"></i></button>
     `;
 
   domString += '</div>';

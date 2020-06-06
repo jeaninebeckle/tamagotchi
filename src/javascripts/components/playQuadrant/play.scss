@@ -1,5 +1,7 @@
-#play {
-  background-color: yellow;
+@import '../../../styles/styles';
+
+  #play {
+  background: linear-gradient(#7cf4deff,  #5599BBff, #6736ecff, #91409Eff);
   position: absolute;
   right: 0;
   width: 50%;

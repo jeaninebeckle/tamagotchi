@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+
+@mixin title-font($fontsize) {
+  font-size: $fontsize;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+
+@mixin body-font($fontsize) {
+  font-size: $fontsize;
+  font-family: 'Press Start 2P', sans-serif;
+  text-align: center;
+}
