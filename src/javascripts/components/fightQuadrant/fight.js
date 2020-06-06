@@ -1,19 +1,36 @@
 import utils from '../../helpers/utils';
 import './fight.scss';
-import petData from '../../helpers/data/petData';
+// import petData from '../../helpers/data/petData';
+
+let strength = 100;
 
 const buildFightQuadrant = () => {
-  const allPets = petData.getPets();
   let domString = '<div class="battleTime">';
 
-  allPets.forEach((pet) => {
-    domString += `<h3>${pet.name}</h3>`;
-  });
+  domString += `<h3>Fight</h3>
+    <h4>Current strength level: ${strength}</h4>
+    <button id="runButton">Run Away (Bravely)</button>
+    <button id="violenceButton">Act Of Violence</button>
+    `;
 
   domString += '</div>';
 
-
   utils.printToDom('#fight', domString);
 };
+
+const clickRunButtonEvent = (e) => {
+  e.preventDefault();
+  strength = Math.min(strength + 1, 100);
+  buildFightQuadrant();
+};
+
+const clickViolenceButtonEvent = (e) => {
+  e.preventDefault();
+  strength = Math.min(strength - 10, 0);
+  buildFightQuadrant();
+};
+
+$('body').on('click', '#runButton', clickRunButtonEvent);
+$('body').on('click', '#violenceButton', clickViolenceButtonEvent);
 
 export default { buildFightQuadrant };
