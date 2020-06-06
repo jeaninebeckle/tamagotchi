@@ -1,19 +1,17 @@
 import utils from '../../helpers/utils';
-import petData from '../../helpers/data/petData';
+// import petData from '../../helpers/data/petData';
 import './sleep.scss';
 
+let energy = 50;
 
 const buildSleepQuadrant = () => {
-  const allPets = petData.getPets();
   let domString = '<div class="sleepyTime">';
 
-  allPets.forEach((pet) => {
-    domString += `<h3>${pet.name}</h3>
-    <h4>Current energy level: ${pet.energy}</h4>
+  domString += `<h3>Tommy</h3>
+    <h4>Current energy level: ${energy}</h4>
     <button id="napButton">Nap</button>
     <button id="sleepButton">Sleep</button>
     `;
-  });
 
   domString += '</div>';
 
@@ -21,20 +19,19 @@ const buildSleepQuadrant = () => {
 };
 
 const clickSleepButtonsEvent = (e) => {
-  const allPets = petData.getPets();
   const buttonId = e.target.id;
 
-  if (allPets.energy === 100) return;
+  if (energy === 100) return;
 
   if (buttonId === 'napButton') {
-    allPets.energy += 50;
+    energy += 50;
   } else {
-    allPets.energy += 60;
+    energy += 60;
   }
 
-  if (allPets.energy > 100) allPets.energy = 100;
+  if (energy > 100) energy = 100;
 
-  console.error(buttonId);
+  console.error(energy);
   buildSleepQuadrant();
 };
 

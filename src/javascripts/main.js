@@ -10,8 +10,6 @@ const init = () => {
   fight.buildFightQuadrant();
   sleep.buildSleepQuadrant();
   play.buildPlayQuadrant();
-  // document.querySelector('#napButton').addEventListener('click', sleep.clickSleepButtonsEvent);
-  // document.querySelector('#sleepButton').addEventListener('click', sleep.clickSleepButtonsEvent);
 };
 
 init();
