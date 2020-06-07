@@ -1,8 +1,15 @@
+@import '../../../styles/styles';
+@import '../../../styles/variables';
+
 #sleep {
-  background-color: red;
+  background: linear-gradient($purpureus, $smitten, $cg-red, $maize-crayola, $iceterine);
   position: absolute;
   bottom: 0;
   right: 0;
   width: 50%;
-  height: 50%
+  height: 50%;
+
+  button {
+  @include button-style($cg-red)
+  }
 }

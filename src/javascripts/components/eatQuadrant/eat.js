@@ -7,10 +7,10 @@ let full = 100;
 const buildEatQuadrant = () => {
   let domString = '<div class="mealTime">';
 
-  domString += `<h3>Eat</h3>
-    <h4>Current strength level: ${full}</h4>
-    <button id="healthyButton">Healthy Food</button>
-    <button id="junkButton">Junk Food</button>
+  domString += `<h3>EAT</h3>
+    <h4>Tommy's current hunger level: ${full}</h4>
+    <button id="healthyButton"><i class="fas fa-carrot"></i></button>
+    <button id="junkButton"><i class="fas fa-ice-cream"></i></button>
     `;
 
   domString += '</div>';

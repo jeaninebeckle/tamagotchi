@@ -7,10 +7,10 @@ let strength = 100;
 const buildFightQuadrant = () => {
   let domString = '<div class="battleTime">';
 
-  domString += `<h3>Fight</h3>
-    <h4>Current strength level: ${strength}</h4>
-    <button id="runButton">Run Away (Bravely)</button>
-    <button id="violenceButton">Act Of Violence</button>
+  domString += `<h3>FIGHT</h3>
+    <h4>Tommy's current strength level: ${strength}</h4>
+    <button id="runButton"><i class="fas fa-running"></i></button>
+    <button id="violenceButton"><i class="fas fa-hand-rock fa-rotate-90"></i></button>
     `;
 
   domString += '</div>';

@@ -1,7 +1,14 @@
+@import '../../../styles/styles';
+@import '../../../styles/variables';
+
 #play {
-  background-color: yellow;
+  background: linear-gradient($turquoise-blue,  $carolina-blue, $han-purple, $purpureus);
   position: absolute;
   right: 0;
   width: 50%;
   height: 50%;
+
+  button {
+    @include button-style($han-purple)
+  }
 }

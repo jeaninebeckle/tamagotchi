@@ -1,0 +1,13 @@
+@import 'variables';
+
+h3 {
+  @include title-font(30px);
+}
+
+h4 {
+  @include body-font(20px);
+}
+
+body {
+  text-align: center;
+}

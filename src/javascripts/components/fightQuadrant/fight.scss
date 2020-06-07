@@ -1,8 +1,15 @@
+@import '../../../styles/styles';
+@import '../../../styles/variables';
+
 #fight {
-  background-color: green;
+  background: linear-gradient($purpureus, $smitten, $cg-red, $maize-crayola, $iceterine);
   width: 50%;
   position: absolute;
   bottom: 0;
   height: 50%;
   margin: 0;
+
+  button {
+    @include button-style($cg-red)
+  }
 }

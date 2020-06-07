@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@mixin title-font($fontsize) {
+  font-size: $fontsize;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+@mixin body-font($fontsize) {
+  font-size: $fontsize;
+  font-family: 'Press Start 2P', sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+@mixin button-style($buttonColor) {
+  border-radius: 360px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  font-size: 30px;
+  outline: none;
+  margin: 20px;
+  color: ($buttonColor);
+  &:hover {
+    background: darken($color: white, $amount: 10%);
+  }
+}
