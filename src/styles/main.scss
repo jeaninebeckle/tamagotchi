@@ -8,10 +8,6 @@ h4 {
   @include body-font(20px);
 }
 
-button {
-  border-radius: 360px;
-  height: 60px;
-  width: 60px;
+body {
   text-align: center;
-  font-size: 30px;
 }
