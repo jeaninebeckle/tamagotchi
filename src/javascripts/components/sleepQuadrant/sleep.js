@@ -1,5 +1,4 @@
 import utils from '../../helpers/utils';
-// import petData from '../../helpers/data/petData';
 import './sleep.scss';
 
 let energy = 50;
