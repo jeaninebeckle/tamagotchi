@@ -1,6 +1,5 @@
 import utils from '../../helpers/utils';
 import './fight.scss';
-// import petData from '../../helpers/data/petData';
 
 let strength = 100;
 
