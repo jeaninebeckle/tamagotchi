@@ -13,6 +13,7 @@ This is a homework assignment to practice using JS modules and SASS styling.
 1. Clone the repo to have it on your local machine along with all of the webpack components
 1. Use `npm start` to start up a local server
 1. Visit the server in your browser (defaults to localhost:8080)
+1. Visit the deployed site at https://tamagotchi-32757.web.app/
 
 ### Screenshots
 ![Main View](./assets/tamagotchi.png)
